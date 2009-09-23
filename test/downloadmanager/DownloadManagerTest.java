@@ -1,5 +1,6 @@
 package downloadmanager;
 
+import java.util.ArrayList;
 import org.junit.After;
 import org.junit.AfterClass;
 import org.junit.Before;
@@ -42,6 +43,24 @@ public class DownloadManagerTest {
 		DownloadManager instance = null;
 		boolean expResult = false;
 		boolean result = instance.addToActiveList(downloadObject);
+	    result = instance.addToActiveList(downloadObject);
+	    assertEquals(expResult, result);
+	}
+	
+	expResult = false;
+	result = instance.addToActiveList(downloadObject);
+	assertEquals(expResult, result);
+    }
+
+    /**
+     * Test of getSelectedList method, of class DownloadManager.
+     */
+    @Test
+    public void testGetSelectedList() {
+	System.out.println("getSelectedList");
+	DownloadManager instance = new DownloadManager();
+	ArrayList expResult = null;
+	ArrayList result = instance.getSelectedList();
 		assertEquals(expResult, result);
 		// TODO review the generated test code and remove the default call to fail.
 		fail("The test case is a prototype.");

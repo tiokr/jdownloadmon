@@ -157,7 +157,6 @@ public class GUI implements DownloadObserver {
 	public JButton getRemoveButton() {
 		return mRemoveButton;
 	}
-
 	/**
 	 * @return The move up queue button.
 	 */

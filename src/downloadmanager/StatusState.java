@@ -22,7 +22,6 @@ public abstract class StatusState {
 	 * For some states this will not start the download.
 	 */
 	public abstract void download();
-
 	/**
 	 * Get a shallow copy of this status state.
 	 * @return a shallow copy of this status state.

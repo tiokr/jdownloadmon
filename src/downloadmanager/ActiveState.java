@@ -18,7 +18,6 @@ public class ActiveState extends StatusState {
 	public void download() {
 		throw new UnsupportedOperationException("Not supported yet.");
 	}
-
 	@Override
 	public StatusState getShallowCopy() {
 		throw new UnsupportedOperationException("Not supported yet.");

@@ -13,14 +13,14 @@ public abstract class Button implements ActionListener {
 
     /** The JButton wrapped in this button. */
     protected JButton mButton;
-    
+
     /**
      * Construct a button.
      * @param button The JButton used in this button.
      * @param downloadManager The download manager to perform actions on.
      */
     protected Button(JButton button) {
-        mButton = button;
+	mButton = button;
 		mButton.addActionListener(this);
     }
 

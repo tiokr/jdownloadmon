@@ -41,6 +41,11 @@ public class DownloadManager implements DownloadObserver {
 	 */
 	public boolean addToActiveList(DownloadObject downloadObject) {
 		throw new UnsupportedOperationException("Not supported yet.");
+	    return false;
+	}
+
+	mActiveList.add(downloadObject);
+	return true;
 	}
 
 	/**
